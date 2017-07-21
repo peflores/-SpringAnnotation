@@ -1,14 +1,15 @@
-package rest;
+package com.controller;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RestController
-public class Controller {
+@Controller
+public class RestController {
 
 	@RequestMapping(path="/saludo", method=	RequestMethod.GET)
+	@ResponseBody
 	public String saludo() {
 		return "Hola Rest!!!!!";
 	}

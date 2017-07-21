@@ -6,14 +6,16 @@
 	<artifactId>AngularSpring</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AngularSpring Maven Webapp</name>
+	<name>AngularSpring</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.2.RELEASE</version>
 	</parent>
+	
 	<dependencies>
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -28,8 +30,11 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
+	
 	</dependencies>
 	<properties>
+<!-- 	<thymeleaf.version>3.0.2.RELEASE</thymeleaf.version> -->
+<!--     <thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version> -->
 		<java.version>1.8</java.version>
 	</properties>
 	<build>
